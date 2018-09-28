@@ -12,19 +12,21 @@ sudo add-apt-repository -y ppa:ethereum/ethereum
 ```
 After that you can install the stable version of Go Ethereum:
 ```
-sudo apt-get update sudoapt-get install ethereum
+sudo apt-get update sudo apt-get install ethereum
 ```
 ### Install Solidity Compiler
 ```
-npm install -g solc
+sudo npm install -g solc
 ```
 
 ## Make the Solidity Smart Contract file
 add.sol
 ```Solidity
-contract Addition{
+pragma solidty ^0.4.25
+
+contract Addition{
     int x;
-    function add(inta, intb) public returns (int) {
+    function add(int a, int b) public returns (int) {
         x = a + b;
         return x;
     }
