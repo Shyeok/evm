@@ -22,7 +22,7 @@ sudo npm install -g solc
 ## Make the Solidity Smart Contract file
 add.sol
 ```Solidity
-pragma solidty ^0.4.25
+pragma solidity ^0.4.25
 
 contract Addition{
     int x;
